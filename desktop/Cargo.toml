@@ -1,0 +1,13 @@
+[package]
+name = "rust-cad-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "rust-cad"
+path = "src/main.rs"
+
+[dependencies]
+rust-cad-core = { path = "../core" }
+eframe = { version = "=0.31.1", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }

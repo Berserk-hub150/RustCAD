@@ -1,0 +1,28 @@
+RUSTCAD 0.1.0 — PRIMA VERSIONE
+
+Se nello ZIP è presente windows/rust-cad.exe:
+1. Estrai tutto lo ZIP.
+2. Apri la cartella windows.
+3. Fai doppio clic su rust-cad.exe.
+
+L'app apre una piastra modificabile con quattro fori.
+New = nuovo disegno. Gli strumenti sono nella colonna sinistra.
+Rotella = zoom. Tasto centrale = sposta la vista. F = adatta al disegno.
+Nel campo File scrivi il percorso per salvare o aprire un .rcad/.dxf.
+Save salva il formato nativo. I pulsanti DXF/SVG/STL esportano.
+
+Comandi da inserire uno alla volta nella riga in basso:
+RECT 0 0 120 80
+CIRCLE 15 15 5
+DIM 0 0 120 0 -15
+BOX 0 0 0 60 40 20
+
+Per il box, seleziona 3D Preview o scrivi 3D.
+Help mostra gli altri comandi. Ctrl+Z annulla.
+
+È un prototipo CAD indipendente scritto in Rust.
+Non ha tutte le funzioni del vero AutoCAD. DWG e modellazione solida
+avanzata non sono implementati. README.md e FEATURES.md spiegano l'ambito.
+
+Se manca l'eseguibile: installa Rust da rustup.rs e i C++ Build Tools
+richiesti dall'installer. Poi esegui scripts/Start-RustCAD.ps1 da PowerShell.
